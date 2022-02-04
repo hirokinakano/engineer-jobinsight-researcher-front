@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    container_name: enginner-insightjob-researcher-swagger-ui
+    volumes:
+      - ./openapi.yml:/usr/share/nginx/html/openapi.yml
+    environment:
+      API_URL: openapi.yml
+    ports:
+      - "8080:8080"
