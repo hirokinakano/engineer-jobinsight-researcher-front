@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.graph {
+  width: 70%;
+}
+
 .footer {
   display: flex;
   flex: 1;
